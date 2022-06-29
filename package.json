@@ -1,0 +1,44 @@
+{
+  "name": "koa_server",
+  "version": "1.0.0",
+  "main": "src/index.ts",
+  "repository": "git@github.com-halonso:halonso14/koa_server.git",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon src/index.ts start",
+    "build": "tsc tsconfig.json",
+    "test": "jest --coverage --coverageDirectory=out/coverage/jest",
+    "lint": "eslint --ext .ts --ext .tsx src/",
+    "lint-fix": "eslint --ext .ts --ext .tsx --fix src/"
+  },
+  "dependencies": {
+    "axios": "^0.27.2",
+    "commander": "^9.3.0",
+    "koa": "^2.13.4",
+    "koa-router": "^10.1.1",
+    "pg": "^8.7.3",
+    "sequelize": "^6.21.1"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/commander": "^2.12.2",
+    "@types/koa": "^2.13.4",
+    "@types/koa-router": "^7.4.4",
+    "@types/sequelize": "^4.28.13",
+    "@typescript-eslint/eslint-plugin": "^5.30.0",
+    "@typescript-eslint/parser": "^5.30.0",
+    "eslint": "^8.18.0",
+    "eslint-config-standard": "^17.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.2.3",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.0.0",
+    "eslint-plugin-standard": "^5.0.0",
+    "gulp": "^4.0.2",
+    "jest": "^28.1.1",
+    "nodemon": "^2.0.18",
+    "pkg": "^5.7.0",
+    "ts-node": "^10.8.1",
+    "typescript": "^4.7.4"
+  }
+}
