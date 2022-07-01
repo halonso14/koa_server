@@ -9,10 +9,10 @@ cmd.option(
   './config/config.json'
 )
 cmd.command('start').action(() => {
-  const server = getServer();
-  const port = 3000;
+  const server = getServer()
+  const port = 3000
   server.listen(port, () => {
-      console.log(`Server started at http://localhost:${port}.`);
-    });
+    console.log(`Server started at http://localhost:${port}.`)
+  })
 })
 cmd.parse(process.argv)
